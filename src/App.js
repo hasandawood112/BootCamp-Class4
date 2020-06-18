@@ -1,24 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import StudentDetails from './studentdetails';
+
 
 function App() {
+
+   let [count, setCount] = useState(1);
+
+  var SName = prompt("What is your name?");
+  var FName = prompt("What is your father name?");
+  var Course = prompt("Which course you are taking?");
+  var Age = prompt("What is your age?");
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <StudentDetails name={SName} Fname={FName} course={Course} age={Age} />
+
+
+
+      {/* <h1>Value of counter variable is : {count}</h1>
+      <button onClick={
+        () => setCount(++count)
+      }>
+        Increase
+          </button>
+
+      <button onClick={
+        () => setCount(--count)
+      }>
+        increase
+          </button>
+
+
+      <button onClick={
+        () => setCount(count - count)
+      }>
+        Reset
+          </button>  */}
+
+      
+
     </div>
   );
 }
