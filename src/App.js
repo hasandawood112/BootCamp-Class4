@@ -5,7 +5,7 @@ import StudentDetails from './studentdetails';
 
 function App() {
 
-   let [count, setCount] = useState(1);
+   //let [count, setCount] = useState(1);
 
   var SName = prompt("What is your name?");
   var FName = prompt("What is your father name?");
