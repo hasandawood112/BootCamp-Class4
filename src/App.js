@@ -18,8 +18,6 @@ function App() {
 
       <StudentDetails name={SName} Fname={FName} course={Course} age={Age} />
 
-
-
       {/* <h1>Value of counter variable is : {count}</h1>
       <button onClick={
         () => setCount(++count)
